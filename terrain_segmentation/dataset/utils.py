@@ -1,6 +1,4 @@
 import os
-import pathlib
-
 
 def get_paths(path):
     file_paths = []
