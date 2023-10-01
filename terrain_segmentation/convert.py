@@ -1,5 +1,7 @@
 from torch.utils.data import Dataset
 from PIL import Image
+import os
+from pathlib import Path
 
 
 class TerSegDataset(Dataset):
@@ -13,7 +15,13 @@ class TerSegDataset(Dataset):
         self.mask_paths = mask_paths
 
     def __len__(self):
-        return len(self.img_paths)
+        # return len(self.)
+        pass
+
+    # def __convert__(self, png_paths):
+    #     if not os.path.exists(png_paths):
+    #         os.mkdir(png_paths)
+    #     for file in self.img_paths
 
     def __getitem__(self, idx):
         img = Image.open(self.img_paths[idx])
