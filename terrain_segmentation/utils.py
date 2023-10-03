@@ -1,5 +1,6 @@
 import os
 
+
 def get_paths(path):
     file_paths = []
     for file in sorted(os.listdir(path)):
